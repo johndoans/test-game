@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser-arcade-physics.min.js"></script>
+</head>
+<body>
+
+<script src="menu.js"></script>
+<script src="game.js"></script>
+<script type="text/javascript">
+	// BIG TODO:
+	// - [ ] Redo background in more cute pixelated style (smaller resolution
+	// - [ ] Rework doing side hops to be more side hops then side marching
+	// - [ ] Make game smaller canvas bigger (180 x 120)
+
+var config = {
+    width: 800,
+    height: 600,
+    type: Phaser.AUTO,
+    physics: {
+        default: 'arcade',
+        arcade: {
+            gravity: { y: 300 },
+            debug: false
+        }
+    },
+    scale: {
+      mode: Phaser.Scale.FIT,
+       autoCenter: Phaser.Scale.CENTER_BOTH,
+    },
+    scene: [Menu, Game],
+    fps: {
+        target: 60,
+	limit: 60,
+    },
+};
+
+var game = new Phaser.Game(config);
+</script>
+
+</body>
+</html>
