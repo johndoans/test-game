@@ -25,7 +25,7 @@ stageText = [
     "E \n Stretch your arms out wide with energy! \n Swipe DOWN to stretch!",
     "A \n March in place, nice and strong! \n Press M to march!",
     "C \n Open your arms wide like a big hug! \n Swipe into the middle to hug!",
-    "H \n Hop side to side with a smile! \n Use the LEFT and RIGHT keys to move!",
+    "H \n Hop side to side with a smile! \n Use the LEFT and RIGHT arrow keys to move!",
 ];
 
     constructor () {
