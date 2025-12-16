@@ -35,9 +35,11 @@ music;
         });
 
         button.on('pointerdown', () => {
-            this.music.stop();
-            this.scene.start('Game');
-            this.scene.remove();
+            this.events.once('destroy', () => {
+                        this.game.scene.add('Menu', Menu);
+                    }
+            this.scene.start("Game");
+            this.scene.remove();;
         });
 
         // Play music
