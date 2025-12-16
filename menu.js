@@ -37,7 +37,7 @@ music;
         button.on('pointerdown', () => {
             this.events.once('destroy', () => {
                         this.game.scene.add('Menu', Menu);
-                    }
+                    });
             this.scene.start("Game");
             this.scene.remove();;
         });
