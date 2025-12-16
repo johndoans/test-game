@@ -321,6 +321,9 @@ stageText = [
                 });
 
                 button.on('pointerdown', () => {
+                    this.events.once('destroy', () => {
+                        this.game.scene.add('Game', Game);
+                    }
                     this.scene.start("Menu");
                     this.scene.remove();
                 });
@@ -347,6 +350,9 @@ stageText = [
                 });
 
                 button.on('pointerdown', () => {
+                    this.events.once('destroy', () => {
+                        this.game.scene.add('Game', Game);
+                    }
                     this.scene.start("Menu");
                     this.scene.remove();
                 });
